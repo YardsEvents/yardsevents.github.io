@@ -103,7 +103,6 @@
     $(document).ready(function () {
       $.ajax({
         type: "GET",
-        //YOUR TURN: Replace with csv export link
         url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR4GjLrZL4Kqu0QYRyw-_H87XbEVmEW9979MwxF-AdW0meyg6Lg4SH3FtOhXvyHgvHQ4uLFoitJq_RU/pub?gid=1574691872&single=true&output=csv',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
